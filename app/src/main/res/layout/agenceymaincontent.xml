@@ -33,13 +33,13 @@
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_margin="10dp"
-                android:background="@drawable/home1"
+                android:background="@drawable/logo1"
                 android:padding="10dp" />
             <ImageView
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_margin="10dp"
-                android:background="@drawable/img2"
+                android:background="@drawable/logo5"
                 android:padding="10dp" />
 
         </LinearLayout>
@@ -77,14 +77,14 @@
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_margin="10dp"
-                android:background="@drawable/img3"
+                android:background="@drawable/logo7"
                 android:padding="20dp" />
 
             <ImageView
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_margin="10dp"
-                android:background="@drawable/img4"
+                android:background="@drawable/logo2"
                 android:padding="10dp" />
         </LinearLayout>
         <LinearLayout
@@ -120,14 +120,14 @@
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_margin="10dp"
-                android:background="@drawable/img5"
+                android:background="@drawable/logo8"
                 android:padding="10dp" />
 
             <ImageView
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_margin="10dp"
-                android:background="@drawable/img6"
+                android:background="@drawable/logo4"
                 android:padding="10dp" />
         </LinearLayout>
         <LinearLayout
@@ -163,14 +163,14 @@
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_margin="10dp"
-                android:background="@drawable/img7"
+                android:background="@drawable/logo6"
                 android:padding="10dp" />
 
             <ImageView
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_margin="10dp"
-                android:background="@drawable/img8"
+                android:background="@drawable/logo3"
                 android:padding="10dp"
                 app:cornerRadius = "30dp"/>
 
