@@ -16,7 +16,5 @@ class AgencyActivity : AppCompatActivity() {
             val intent1 = Intent(this, AgenceyManincontent::class.java)
             startActivity(intent1)
         }
-
-
     }
 }
