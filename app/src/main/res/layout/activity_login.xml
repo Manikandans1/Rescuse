@@ -26,7 +26,7 @@ tools:context=".LoginActivity">
             android:padding="20dp">
 
             <EditText
-                android:id="@+id/login_email"
+                android:id="@+id/loginemail"
                 android:layout_width="350dp"
                 android:layout_height="60dp"
                 android:layout_marginTop="30dp"
@@ -38,7 +38,7 @@ tools:context=".LoginActivity">
                 android:textColor="@color/grey" />
 
             <EditText
-                android:id="@+id/login_password"
+                android:id="@+id/loginpassword"
                 android:layout_width="350dp"
                 android:layout_height="60dp"
                 android:layout_marginTop="20dp"
@@ -48,7 +48,8 @@ tools:context=".LoginActivity">
                 android:drawableLeft="@drawable/baseline_lock_24"
                 android:inputType="textPassword"
                 android:padding="8dp"
-                android:textColor="@color/grey" />
+                android:textColor="@color/grey"
+                app:passwordToggleEnabled="true"/>
 
             <Button
                 android:id="@+id/login_button"
@@ -60,14 +61,15 @@ tools:context=".LoginActivity">
                 app:cornerRadius="30dp" />
 
             <TextView
-                android:id="@+id/signupRedirectText"
+                android:id="@+id/textviewsignup"
                 android:layout_width="wrap_content"
-                android:layout_height="24dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="8dp"
                 android:padding="3dp"
                 android:text="Not yet registered? signup"
-                android:textColor="@color/lavender"
+                android:textColor="@color/black"
+                app:layout_constarintTop_toBottomOf="@+id/gotosignup"
                 android:textSize="18sp" />
         </LinearLayout>
     </LinearLayout>

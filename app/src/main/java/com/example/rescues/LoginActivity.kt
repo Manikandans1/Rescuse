@@ -4,18 +4,45 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.Toast
+import com.example.rescues.databinding.ActivityLoginBinding
+import com.example.rescues.databinding.ActivitySignupBinding
+import com.google.firebase.auth.FirebaseAuth
 
 class LoginActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityLoginBinding
+    private lateinit var firebaseAuth: FirebaseAuth
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login)
+        binding = ActivityLoginBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        val loginbutton = findViewById<Button>(R.id.login_button)
-        loginbutton.setOnClickListener{
-
-            val intent = Intent(this, AgencyActivity::class.java)
-            startActivity(intent)
+        binding.textviewsignup.setOnClickListener{
+            val intent = Intent(this,LoginActivity::class.java)
         }
+
+        binding.loginButton.setOnClickListener{
+            val email = binding.loginemail.text.toString()
+            val pass = binding.loginpassword.text.toString()
+
+            if (email.isNotEmpty() && pass.isNotEmpty()) {
+                    firebaseAuth.signInWithEmailAndPassword(email,pass).addOnCompleteListener{
+                        if (it.isSuccessful) {
+                            val intent = Intent(this, SignupActivity::class.java)
+                            startActivity(intent)
+                        } else {
+                            Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT).show()
+
+                        }
+                    }
+            } else {
+                Toast.makeText(this, "Empty Fields Are not Allowed!!", Toast.LENGTH_SHORT).show()
+            }
+
+
+        }
+
 
 
     }

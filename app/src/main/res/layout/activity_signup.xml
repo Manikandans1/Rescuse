@@ -23,7 +23,7 @@
             <EditText
                 android:layout_width="350dp"
                 android:layout_height="60dp"
-                android:id="@+id/signup_email"
+                android:id="@+id/signupemail"
                 android:layout_marginTop="30dp"
                 android:background="@drawable/lavender_border"
                 android:padding="8dp"
@@ -34,7 +34,7 @@
             <EditText
                 android:layout_width="350dp"
                 android:layout_height="60dp"
-                android:id="@+id/signup_password"
+                android:id="@+id/signuppassword"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/lavender_border"
                 android:padding="8dp"
@@ -42,11 +42,12 @@
                 android:drawableLeft="@drawable/baseline_lock_24"
                 android:inputType="textPassword"
                 android:drawablePadding="8dp"
-                android:textColor="@color/grey"/>
+                android:textColor="@color/grey"
+                app:passwordToggleEnabled="true"/>
             <EditText
                 android:layout_width="350dp"
                 android:layout_height="60dp"
-                android:id="@+id/signup_confirm"
+                android:id="@+id/signupconfirm"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/lavender_border"
                 android:padding="8dp"
@@ -54,25 +55,27 @@
                 android:drawableLeft="@drawable/baseline_password_24"
                 android:inputType="textPassword"
                 android:drawablePadding="8dp"
-                android:textColor="@color/grey"/>
+                android:textColor="@color/grey"
+                app:passwordToggleEnabled="true"/>
             <Button
                 android:layout_width="350dp"
                 android:layout_height="70dp"
                 android:layout_marginTop="30dp"
                 android:text="Sign Up"
-                android:id="@+id/signup_button"
+                android:id="@+id/signupbutton"
                 android:textSize="18sp"
                 app:cornerRadius = "30dp"/>
             <TextView
+                android:id="@+id/textviewlogin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/loginRedirectText"
                 android:text="Already an user? Login"
                 android:layout_gravity="center"
                 android:padding="8dp"
                 android:layout_marginTop="8dp"
                 android:textSize="18sp"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black"
+                app:layout_constarintTop_toBottomOf="@+id/gotogogin"/>
         </LinearLayout>
     </LinearLayout>
 
