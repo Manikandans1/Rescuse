@@ -69,7 +69,6 @@ tools:context=".LoginActivity">
                 android:padding="3dp"
                 android:text="Not yet registered? signup"
                 android:textColor="@color/black"
-                app:layout_constarintTop_toBottomOf="@+id/gotosignup"
                 android:textSize="18sp" />
         </LinearLayout>
     </LinearLayout>
